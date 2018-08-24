@@ -3,10 +3,10 @@ server {
     listen      %ip%:%proxy_port%;
     server_name %domain_idn% %alias_idn%;
 
-    # don't send the nginx version number in error pages and Server header
+    # don not send the nginx version number in error pages and Server header
     server_tokens off;
     
-    # config to don't allow the browser to render the page inside an frame or iframe
+    # config to do not allow the browser to render the page inside an frame or iframe
     # and avoid clickjacking http://en.wikipedia.org/wiki/Clickjacking
     # if you need to allow [i]frames, you can use SAMEORIGIN or even set an uri with ALLOW-FROM uri
     # https://developer.mozilla.org/en-US/docs/HTTP/X-Frame-Options
