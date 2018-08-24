@@ -37,11 +37,6 @@ server {
     # PLEASE EDIT THIS HEADER IN ORDER TO FIT YOUR NEEDS
     #
     add_header Content-Security-Policy "default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';";
-    
-    # config to enable HSTS(HTTP Strict Transport Security) https://developer.mozilla.org/en-US/docs/Security/HTTP_Strict_Transport_Security
-    # to avoid ssl stripping https://en.wikipedia.org/wiki/SSL_stripping#SSL_stripping
-    # also https://hstspreload.org/
-    add_header Strict-Transport-Security "max-age=31536000; includeSubdomains; preload";
 
     error_log  /var/log/%web_system%/domains/%domain%.error.log error;
 
