@@ -33,6 +33,9 @@ server {
     # I need to change our application code so we can increase security by disabling 'unsafe-inline' 'unsafe-eval'
     # directives for css and js(if you have inline css or js, you will need to keep it too).
     # more: http://www.html5rocks.com/en/tutorials/security/content-security-policy/#inline-code-considered-harmful
+    #
+    # PLEASE EDIT THIS HEADER IN ORDER TO FIT YOUR NEEDS
+    #
     add_header Content-Security-Policy "default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';";
    
     # config to enable HSTS(HTTP Strict Transport Security) https://developer.mozilla.org/en-US/docs/Security/HTTP_Strict_Transport_Security
